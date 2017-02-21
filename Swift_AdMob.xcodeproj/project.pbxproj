@@ -12,6 +12,10 @@
 		CEACA9E61E5C873C0043B6A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEACA9E41E5C873C0043B6A2 /* Main.storyboard */; };
 		CEACA9E81E5C873C0043B6A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEACA9E71E5C873C0043B6A2 /* Assets.xcassets */; };
 		CEACA9EB1E5C873C0043B6A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEACA9E91E5C873C0043B6A2 /* LaunchScreen.storyboard */; };
+		CEACA9F31E5C87FE0043B6A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEACA9F21E5C87FE0043B6A2 /* GoogleService-Info.plist */; };
+		CEACA9F51E5C88860043B6A2 /* googlemobileadssdkios.zip in Resources */ = {isa = PBXBuildFile; fileRef = CEACA9F41E5C88860043B6A2 /* googlemobileadssdkios.zip */; };
+		CEACA9F71E5C889C0043B6A2 /* GoogleMobileAdsSdkiOS-7.17.0 in Resources */ = {isa = PBXBuildFile; fileRef = CEACA9F61E5C889C0043B6A2 /* GoogleMobileAdsSdkiOS-7.17.0 */; };
+		CEACA9F91E5C899B0043B6A2 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEACA9F81E5C899B0043B6A2 /* GoogleMobileAds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		CEACA9E71E5C873C0043B6A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEACA9EA1E5C873C0043B6A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEACA9EC1E5C873C0043B6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEACA9F21E5C87FE0043B6A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEACA9F41E5C88860043B6A2 /* googlemobileadssdkios.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = googlemobileadssdkios.zip; sourceTree = "<group>"; };
+		CEACA9F61E5C889C0043B6A2 /* GoogleMobileAdsSdkiOS-7.17.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "GoogleMobileAdsSdkiOS-7.17.0"; sourceTree = "<group>"; };
+		CEACA9F81E5C899B0043B6A2 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "GoogleMobileAdsSdkiOS-7.17.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEACA9F91E5C899B0043B6A2 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +69,10 @@
 				CEACA9E71E5C873C0043B6A2 /* Assets.xcassets */,
 				CEACA9E91E5C873C0043B6A2 /* LaunchScreen.storyboard */,
 				CEACA9EC1E5C873C0043B6A2 /* Info.plist */,
+				CEACA9F21E5C87FE0043B6A2 /* GoogleService-Info.plist */,
+				CEACA9F41E5C88860043B6A2 /* googlemobileadssdkios.zip */,
+				CEACA9F81E5C899B0043B6A2 /* GoogleMobileAds.framework */,
+				CEACA9F61E5C889C0043B6A2 /* GoogleMobileAdsSdkiOS-7.17.0 */,
 			);
 			path = Swift_AdMob;
 			sourceTree = "<group>";
@@ -123,8 +136,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEACA9F51E5C88860043B6A2 /* googlemobileadssdkios.zip in Resources */,
 				CEACA9EB1E5C873C0043B6A2 /* LaunchScreen.storyboard in Resources */,
+				CEACA9F31E5C87FE0043B6A2 /* GoogleService-Info.plist in Resources */,
 				CEACA9E81E5C873C0043B6A2 /* Assets.xcassets in Resources */,
+				CEACA9F71E5C889C0043B6A2 /* GoogleMobileAdsSdkiOS-7.17.0 in Resources */,
 				CEACA9E61E5C873C0043B6A2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +274,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Swift_AdMob/GoogleMobileAdsSdkiOS-7.17.0",
+				);
 				INFOPLIST_FILE = Swift_AdMob/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yasuaki.Swift-AdMob";
@@ -270,6 +290,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Swift_AdMob/GoogleMobileAdsSdkiOS-7.17.0",
+				);
 				INFOPLIST_FILE = Swift_AdMob/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yasuaki.Swift-AdMob";
